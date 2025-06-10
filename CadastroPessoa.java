@@ -156,7 +156,7 @@ public class CadastroPessoa extends JFrame {
         lblValorPais.setOpaque(true);
         lblValorPais.setBackground(new Color(201, 201, 201));
         lblValorPais.setBorder(BorderFactory.createLineBorder(Color.GRAY));
-        lblValorPais.setHorizontalAlignment(SwingConstants.CENTER);
+        lblValorPais.setHorizontalAlignment(SwingConstants.LEFT);
         lblValorPais.setFont(fontePadrao);
         add(lblValorPais);
 
