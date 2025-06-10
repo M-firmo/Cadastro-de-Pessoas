@@ -18,8 +18,8 @@ public class CadastroPessoa extends JFrame {
         setSize(1050, 500);
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setResizable(false);
+        setLocationRelativeTo(this);
+        setResizable(true);
         getContentPane().setBackground(new Color(250, 250, 250));
 
         // Define uma fonte padrão para os textos
@@ -270,6 +270,7 @@ public class CadastroPessoa extends JFrame {
         lblSituacao.setHorizontalAlignment(SwingConstants.CENTER);
         lblSituacao.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         lblSituacao.setFont(new Font("Arial", Font.BOLD, 14));
+        //add(grupoSituacao = new ButtonGroup()); 
         add(lblSituacao);
 
         // Rádio button para Ativo
@@ -285,6 +286,10 @@ public class CadastroPessoa extends JFrame {
         radioInativo.setFont(fontePadrao);
         radioInativo.setBackground(Color.WHITE);
         add(radioInativo);
+
+        grupoSituacao = new ButtonGroup();
+        grupoSituacao.add(radioAtivo);
+        grupoSituacao.add(radioInativo);
 
         // Botão Confirmar
         JButton btnConfirmar = new JButton("Confirmar");
